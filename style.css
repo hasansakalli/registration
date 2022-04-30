@@ -11,7 +11,7 @@
 body {
   display: grid;
   place-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: #282828;
   font-family: "Montserrat", sans-serif;
   color: #222222;
@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  max-width: 1300px;
+  max-width: 1400px;
   background-color: #ffffff;
 }
 .img_header,
@@ -40,12 +40,7 @@ img {
   height: 750px;
 }
 
-form > * {
-  margin-bottom: 1rem;
-}
-form {
-  padding: 1rem;
-}
+
 label {
   font-size: 14px;
   line-height: 25px;
@@ -56,6 +51,7 @@ h1 {
   margin-top: 2rem;
   font-size: 20px;
   line-height: 33px;
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -153,18 +149,19 @@ span {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
-  align-items: flex-end;
+  align-items: baseline;
 }
 .resutList {
   display: flex;
   justify-content: left;
-  align-items: baseline;
+  align-items: center;
   gap: 0.3rem;
   border-bottom: 1px solid rgba(128, 128, 128, 0.292);
   min-height: 40px;
+  margin-top: 0.9rem;
 }
 h3 {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   text-align: center;
   color: darkgreen;
   background-color: rgb(163, 222, 135);
@@ -173,9 +170,11 @@ h3 {
 #reset2 {
   color: rgb(255, 255, 255);
   background-color: #ff6801;
-  padding-bottom: 0.4rem;
+  padding-bottom: 1rem;
 }
-
+.buttons{
+    margin-top: 1rem;
+}
 
 @media (max-width: 1200px) {	
 
