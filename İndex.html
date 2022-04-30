@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img_header">
+        <img src="signup-img.jpg" width="400px" alt="" />
+      </div>
+      <div class="form_header">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <p id="formValidator"></p>
+
+        <!-- isimler bölümü -->
+        <div class="nameHeader flex">
+          <div class="name-box grid">
+            <label id="nameLabel" for="">Name :</label>
+            <input id="name" type="text" />
+          </div>
+          <div class="fatherName-box grid">
+            <label id="fatherNameLabel" for="">Father Name :</label>
+            <input id="fatherName" type="text" />
+          </div>
+        </div>
+        <!-- adres bölümü -->
+        <div class="adresseBox grid">
+          <label for="">Address :</label>
+          <input id="adresse" type="text" />
+        </div>
+
+        <!-- cinsiyet bölümü -->
+        <div class="genderBox">
+          <label for="">Gender:</label>
+          <input id="male" type="radio" name="gender" checked /><span
+            id="mfselect"
+            >Male</span
+          >
+          <input id="female" type="radio" name="gender" id="" /><span
+            id="mfselect"
+            >Female</span
+          >
+        </div>
+        <!-- state bölümü -->
+        <div class="select_header flex">
+          <div class="stateBox grid">
+            <label id="stateLabel" for="">State:</label>
+            <select name="state" id="state" onchange="stategoster()">
+              <option value=""></option>
+              <option value="aa">USA</option>
+              <option value="bb">Germany</option>
+              <option value="aa">Canada</option>
+              <option value="bb">Spain</option>
+            </select>
+          </div>
+
+          <!-- city bölümü -->
+          <div class="cityeBox grid">
+            <label id="cityLabel" for="">Langauge:</label>
+            <select name="city" id="city" onchange="citygoster()">
+              <option value=""></option>
+              <option value="">Englisch</option>
+              <option value="">Deutsch</option>
+              <option value="">Turkish</option>
+              <option value="">Spanish</option>
+              <option value="">italian</option>
+              <option value="">French</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- DOB bölümü -->
+        <div class="dobBox grid">
+          <label for="">DOB :</label>
+          <input id="dob" type="text" />
+        </div>
+        <!-- pİNCODE bölümü -->
+        <div class="pincode Box grid">
+          <label for="">Pincode :</label>
+          <input id="pincode" type="password" />
+        </div>
+
+        <!-- COURSE bölümü -->
+        <div class="courseBox grid">
+          <label for="">Course :</label>
+          <select name="" id="course" onchange="coursegoster()">
+            <option value=""></option>
+            <option value="">Computer Operator & Programming Assistant</option>
+            <option value="">Designer</option>
+            <option value="">Marketing</option>
+          </select>
+        </div>
+        <!-- Email bölümü -->
+        <div class="emailBox grid">
+          <label for="">Email ID :</label>
+          <input type="email" name="" id="email" /><br />
+        </div>
+        <!-- Button bölümü -->
+
+        <div class="buttons">
+          <button id="reset">Reset All</button>
+          <button id="submit" onclick="gonder()">Submit Form</button>
+        </div>
+      </div>
+
+      <div class="form_result">
+        <h3>
+          Congratulations, your registration has been successfully completed.
+        </h3>
+        <form id="resultText" action="">
+          <div class="resutList">
+            <span>Name :</span>
+            <p id="resultName"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Father Name :</span>
+            <p id="resultFatherName"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Address :</span>
+            <p id="resultAdress"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Gender:</span>
+            <p id="resultGender"></p>
+          </div>
+
+          <div class="resutList">
+            <span>State:</span>
+            <p id="resultState"></p>
+          </div>
+
+          <div class="resutList">
+            <span>City:</span>
+            <p id="resultCity"></p>
+          </div>
+
+          <div class="resutList">
+            <span>DOB :</span>
+            <p id="resultDob"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Pincode :</span>
+            <p id="resultPincode"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Course :</span>
+            <p id="resultCourse"></p>
+          </div>
+
+          <div class="resutList">
+            <span>Email ID :</span>
+            <p id="resultEmail"></p>
+          </div>
+
+          <div class="buttons">
+            <button id="reset2">Reset All</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

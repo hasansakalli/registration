@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  background-color: #282828;
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+}
+.container {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  max-width: 1300px;
+  background-color: #ffffff;
+}
+.img_header,
+.form_header,
+.form_result {
+  width: 600px;
+  height: 750px;
+}
+.form_header,
+.form_result {
+  padding: 1rem;
+}
+
+img {
+  width: 600px;
+  height: 750px;
+}
+
+form > * {
+  margin-bottom: 1rem;
+}
+form {
+  padding: 1rem;
+}
+label {
+  font-size: 14px;
+  line-height: 25px;
+
+  font-weight: 700;
+}
+h1 {
+  margin-top: 2rem;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.grid {
+  display: grid;
+  flex-direction: column;
+}
+input,
+select {
+  height: 40px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  border: 1px solid #ebebeb;
+}
+input:focus,
+select:focus {
+  border: 1px solid #ff6701bb;
+  transition: all 800ms;
+}
+#name,
+#fatherName {
+  width: 250px;
+}
+#state,
+#city {
+  width: 250px;
+}
+.buttons {
+  text-align: right;
+}
+button {
+  width: 140px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  padding: 10px;
+}
+#reset {
+  color: #999;
+}
+#reset:hover {
+  background-color: #ff6801;
+  color: #fff;
+}
+#submit {
+  background-color: #ff6801;
+}
+#submit:hover {
+  background-color: #cd5300;
+}
+.genderBox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#male,
+#female {
+  margin-left: 5rem;
+  margin-right: 0.5rem;
+  width: 16px;
+}
+#mfselect {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  color: #222222;
+}
+option {
+  font-size: 16px;
+}
+
+/* sonuc sayfası css */
+
+.form_result {
+  display: none;
+  background-color: rgba(225, 206, 206, 0.185);
+}
+span {
+  font-size: 14px;
+  line-height: 25px;
+
+  font-weight: 700;
+}
+.resutList p {
+  color: brown;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  align-items: flex-end;
+}
+.resutList {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  gap: 0.3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.292);
+  min-height: 40px;
+}
+h3 {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: darkgreen;
+  background-color: rgb(163, 222, 135);
+  padding: 0.4rem;
+}
+#reset2 {
+  color: rgb(255, 255, 255);
+  background-color: #ff6801;
+  padding-bottom: 0.4rem;
+}
+
+
+@media (max-width: 1200px) {	
+
+
+    .container {
+        margin-top: 0.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        max-width: 600px;
+        background-color: #ffffff;
+      }
+
+}
