@@ -14,97 +14,100 @@
       </div>
       <div class="form_header">
         <h1>STUDENT REGISTRATION FORM</h1>
-        <p id="formValidator"></p>
-       
-        <!-- isimler bölümü -->
-        <div class="nameHeader flex">
-          <div class="name-box grid">
-            <label id="nameLabel" for="">Name :</label>
-            <input id="name" type="text" />
-          </div>
-          <div class="fatherName-box grid">
-            <label id="fatherNameLabel" for="">Father Name :</label>
-            <input id="fatherName" type="text" />
-          </div>
-        </div>
-        <!-- adres bölümü -->
-        <div class="adresseBox grid">
-          <label for="">Address :</label>
-          <input id="adresse" type="text" />
-        </div>
 
-        <!-- cinsiyet bölümü -->
-        <div class="genderBox">
-          <label for="">Gender:</label>
-          <input id="male" type="radio" name="gender" checked /><span
-            id="mfselect"
-            >Male</span
-          >
-          <input id="female" type="radio" name="gender" id="" /><span
-            id="mfselect"
-            >Female</span
-          >
-        </div>
-        <!-- state bölümü -->
-        <div class="select_header flex">
-          <div class="stateBox grid">
-            <label id="stateLabel" for="">State:</label>
-            <select name="state" id="state" onchange="stategoster()">
+        <form id="myForm">
+          <!-- isimler bölümü -->
+          <div class="nameHeader flex">
+            <div class="name-box grid">
+              <label id="nameLabel" for="">Name :</label>
+              <input id="name" type="text" required />
+            </div>
+            <div class="fatherName-box grid">
+              <label id="fatherNameLabel" for="">Father Name :</label>
+              <input id="fatherName" type="text" required />
+            </div>
+          </div>
+          <!-- adres bölümü -->
+          <div class="adresseBox grid">
+            <label for="">Address :</label>
+            <input id="adresse" type="text" required />
+          </div>
+
+          <!-- cinsiyet bölümü -->
+          <div class="genderBox">
+            <label for="">Gender:</label>
+            <input id="male" type="radio" name="gender" checked /><span
+              id="mfselect"
+              >Male</span
+            >
+            <input id="female" type="radio" name="gender" id="" /><span
+              id="mfselect"
+              >Female</span
+            >
+          </div>
+          <!-- state bölümü -->
+          <div class="select_header flex">
+            <div class="stateBox grid">
+              <label id="stateLabel" for="">State:</label>
+              <select name="state" id="state" required onchange="stategoster()">
+                <option value=""></option>
+                <option value="aa">USA</option>
+                <option value="bb">Germany</option>
+                <option value="aa">Canada</option>
+                <option value="bb">Spain</option>
+              </select>
+            </div>
+
+            <!-- city bölümü -->
+            <div class="cityeBox grid">
+              <label id="cityLabel" for="">Langauge:</label>
+              <select name="city" id="city" required onchange="citygoster()">
+                <option value=""></option>
+                <option value="">Englisch</option>
+                <option value="">Deutsch</option>
+                <option value="">Turkish</option>
+                <option value="">Spanish</option>
+                <option value="">italian</option>
+                <option value="">French</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- DOB bölümü -->
+          <div class="dobBox grid">
+            <label for="">DOB :</label>
+            <input id="dob" type="text" required />
+          </div>
+          <!-- pİNCODE bölümü -->
+          <div class="pincode Box grid">
+            <label for="">Pincode :</label>
+            <input id="pincode" type="password" required />
+          </div>
+
+          <!-- COURSE bölümü -->
+          <div class="courseBox grid">
+            <label for="">Course :</label>
+            <select name="" id="course" required onchange="coursegoster()">
               <option value=""></option>
-              <option value="aa">USA</option>
-              <option value="bb">Germany</option>
-              <option value="aa">Canada</option>
-              <option value="bb">Spain</option>
+              <option value="">
+                Computer Operator & Programming Assistant
+              </option>
+              <option value="">Designer</option>
+              <option value="">Marketing</option>
             </select>
           </div>
-
-          <!-- city bölümü -->
-          <div class="cityeBox grid">
-            <label id="cityLabel" for="">Langauge:</label>
-            <select name="city" id="city" onchange="citygoster()">
-              <option value=""></option>
-              <option value="">Englisch</option>
-              <option value="">Deutsch</option>
-              <option value="">Turkish</option>
-              <option value="">Spanish</option>
-              <option value="">italian</option>
-              <option value="">French</option>
-            </select>
+          <!-- Email bölümü -->
+          <div class="emailBox grid">
+            <label for="">Email ID :</label>
+            <input type="email" name="" id="email" required /><br />
           </div>
-        </div>
+          <!-- Button bölümü -->
 
-        <!-- DOB bölümü -->
-        <div class="dobBox grid">
-          <label for="">DOB :</label>
-          <input id="dob" type="text" />
-        </div>
-        <!-- pİNCODE bölümü -->
-        <div class="pincode Box grid">
-          <label for="">Pincode :</label>
-          <input id="pincode" type="password" />
-        </div>
-
-        <!-- COURSE bölümü -->
-        <div class="courseBox grid">
-          <label for="">Course :</label>
-          <select name="" id="course" onchange="coursegoster()">
-            <option value=""></option>
-            <option value="">Computer Operator & Programming Assistant</option>
-            <option value="">Designer</option>
-            <option value="">Marketing</option>
-          </select>
-        </div>
-        <!-- Email bölümü -->
-        <div class="emailBox grid">
-          <label for="">Email ID :</label>
-          <input type="email" name="" id="email" /><br />
-        </div>
-        <!-- Button bölümü -->
-
-        <div class="buttons">
-          <button id="reset">Reset All</button>
-          <button id="submit" onclick="gonder()">Submit Form</button>
-        </div>
+          <div class="buttons">
+            <button id="reset">Reset All</button>
+            <button id="submit">Submit Form</button>
+          </div>
+        </form>
       </div>
 
       <div class="form_result">
